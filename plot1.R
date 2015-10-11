@@ -59,7 +59,7 @@ globalActivePower <- as.numeric(household_power$Global_active_power);
 hist(globalActivePower, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)");
 axis(side=1, at=seq(0,6,2), labels=seq(0,6,2));
 
-# Output a PNG file with the R graphics package
+# Output a PNG file
 dev.copy(png, file="plot1.png", height=480, width=480);
 dev.off();
 

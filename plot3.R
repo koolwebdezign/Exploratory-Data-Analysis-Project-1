@@ -58,7 +58,7 @@ lines(household_power$Time, household_power$Sub_metering_2, type="o", pch=".", c
 lines(household_power$Time, household_power$Sub_metering_3, type="o", pch=".", col="Blue");
 legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"));
 
-# Output a PNG file with the R graphics package
+# Output a PNG file
 dev.copy(png, file="plot3.png", height=480, width=480);
 dev.off();
 

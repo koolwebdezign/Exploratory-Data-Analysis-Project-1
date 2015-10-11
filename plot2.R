@@ -55,7 +55,7 @@ if (!exists("household_power")) {
 # Generate a line chart - Plot #2
 plot(household_power$Time, household_power$Global_active_power, type="o", ylab="Global Active Power (kilowatts)", xlab="", pch=".");
 
-# Output a PNG file with the R graphics package
+# Output a PNG file
 dev.copy(png, file="plot2.png", height=480, width=480);
 dev.off();
 
